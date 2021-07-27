@@ -39,7 +39,7 @@ const client = new discord.Client({
 fs.readdir(__dirname + "/clubhouse/", (err, files) => {
   if (err) return console.error(err);
   files.forEach((file) => {
-    const event = require(__dirname + `/events/${file}`);
+    const event = require(__dirname + `/clubhouse/${file}`);
     let eventName = file.split(".")[0];
     client.on(eventName, event.bind(null, client));
     console.log("Loading Event: "+eventName)
