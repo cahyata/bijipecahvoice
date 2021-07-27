@@ -11,8 +11,8 @@ app.get("/", (req, res) => {
   
   app.listen(process.env.PORT || 5000);
 
-  client.commands = new Discord.Collection();
-client.aliases = new Discord.Collection();
+  client.commands = new discord.Collection();
+client.aliases = new discord.Collection();
 
 const client = new discord.Client({
     ws: {
