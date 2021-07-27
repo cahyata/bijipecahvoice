@@ -1,22 +1,16 @@
 
+  const { MessageEmbed } = require("discord.js");
   module.exports = async client => {
 
     //PRESENCE
   const status = [
-    `BIJIPECAH // Small Community`,
-    `BIJIPECAH // Minecraft Server`,
-    `BIJIPECAH // Open Feedback`,
-    `BIJIPECAH // Steam Group`,
-    `BIJIPECAH // BP+ Abbreviation`,
-    `BIJIPECAH // Watch Movies Together`,
-    `BIJIPECAH // Play Games Together`,
-    `BIJIPECAH // Kinda Friendly Admin :)`
+    `The Clubhouse`
   ];
   
   setInterval(() => {
     client.user.setActivity(status[Math.floor(Math.random() * status.length)], {
       type: "COMPETING"
-    }); //watching bisa kalian ganti sama playing dan semacamnya
+    });
   }, 5000);
   
 
