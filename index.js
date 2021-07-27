@@ -11,6 +11,9 @@ app.get("/", (req, res) => {
   
   app.listen(process.env.PORT || 5000);
 
+  client.commands = new Discord.Collection();
+client.aliases = new Discord.Collection();
+
 const client = new discord.Client({
     ws: {
       intents: [
@@ -31,6 +34,11 @@ const client = new discord.Client({
       client.on(eventName, event.bind(null, client));
       console.log("Loading Event: "+eventName)
     });
+  });
+
+  fs.readdir('./commands/', (err, files) => {
+    const commandHandler = require('./handler/commandHandler.js');
+    commandHandler(err, files, client);
   });
 
   console.log('p')
