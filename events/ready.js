@@ -1,7 +1,15 @@
+const { MessageEmbed } = require("discord.js");
 
-  const { MessageEmbed } = require("discord.js");
-  module.exports = async client => {
+module.exports = {
+  event: 'ready',
+  once: true,
+  run() {
+    console.log('Bot on!');
+  },
+};
 
+module.exports = async client => {
+  
     //PRESENCE
   const status = [
     `The Clubhouse`

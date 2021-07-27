@@ -1,5 +1,4 @@
-  
-module.exports = (err, files, client) => {
+  module.exports = (err, files, client) => {
 	if (err) return console.error(err);
 	files.forEach((file) => {
 		const eventFunction = require(`./../events/${file}`);
