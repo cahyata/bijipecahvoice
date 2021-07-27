@@ -1,4 +1,5 @@
 const { MessageEmbed } = require("discord.js");
+const join = require(`../clubhouse/join.js`)
 
 module.exports = async client => {
   
@@ -40,4 +41,5 @@ module.exports = async client => {
 
   console.info(`Logged in as ${client.user.username}`);
 
+  join(client)
 }
