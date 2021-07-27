@@ -22,8 +22,8 @@ module.exports = {
         let embed = new MessageEmbed()
         .setColor(message.guild.me.displayHexColor)
         .setDescription(`**⏱ Bot Latency**\n\`\`\`
-        Latency: ${Date.now() - message.createdTimestamp}ms
-        API Latency: ${Math.round(client.ws.ping)}ms\`\`\`
+Latency: ${Date.now() - message.createdTimestamp}ms
+API Latency: ${Math.round(client.ws.ping)}ms\`\`\`
         `)
         message.channel.send(embed)   
     },

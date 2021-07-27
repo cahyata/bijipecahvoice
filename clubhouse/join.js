@@ -1,4 +1,4 @@
-const { guildOnly } = require("../commands/ping")
+const discord = require("discord.js");
 
 module.exports = client => {
     const masterch = client.channels.cache.get('869162393756921876')
