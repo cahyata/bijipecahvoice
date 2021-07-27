@@ -1,13 +1,13 @@
 {
   "name": "bpclubhouse",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Bijipecah Clubhouse",
   "main": "index.js",
   "dependencies": {
     "discord.js": "^12.5.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "fs": "0.0.1-security"
+    "fs": "^0.0.2"
   },
   "devDependencies": {},
   "scripts": {
@@ -21,6 +21,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cahyata/bijipecahvoice/issues"
+  },
+  "engines": {
+    "node": "12.x"
   },
   "homepage": "https://github.com/cahyata/bijipecahvoice#readme",
   "keywords": []
