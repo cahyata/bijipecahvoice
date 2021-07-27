@@ -12,9 +12,14 @@
     "test": "node index.js"
   },
   "repository": {
-    "name":"git",
-    "url": "https://git.heroku.com/bijipecahvoice.git"
+    "name": "git",
+    "url": "git+https://github.com/cahyata/bijipecahvoice.git"
   },
   "author": "gcks",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cahyata/bijipecahvoice/issues"
+  },
+  "homepage": "https://github.com/cahyata/bijipecahvoice#readme",
+  "keywords": []
 }
