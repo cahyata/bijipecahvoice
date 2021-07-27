@@ -36,7 +36,7 @@ const client = new discord.Client({
   });
 });
 
-fs.readdir(__dirname + "./clubhouse/", (err, files) => {
+fs.readdir(__dirname + "/clubhouse/", (err, files) => {
   if (err) return console.error(err);
   files.forEach((file) => {
     const event = require(__dirname + `/events/${file}`);
