@@ -1,8 +1,6 @@
-const { prefix } = require('./../utils/config.json');
+const { prefix } = require('../utils/config.json');
 
-module.exports = {
-	event: 'message',
-	run: (message, client) =>{
+module.exports = (client, message) => {
 		if (!message.content.startsWith(prefix) || message.author.bot) return;
 		const args = message.content.slice(prefix.length).split(/ +/);
 		const commandName = args.shift().toLowerCase();
@@ -30,5 +28,4 @@ module.exports = {
 			console.error(error);
 			message.reply('There was an error trying to execute that command!');
 		}
-	},
 };

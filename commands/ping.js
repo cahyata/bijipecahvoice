@@ -5,10 +5,10 @@ const { platform, arch, cpus, os } = require("os")
 module.exports = {
 	name: 'ping',
 	description: 'Show Bot Latency',
-	aliases: ['aleas1', 'alias2'],
+	aliases: [''],
 	guildOnly: false, //true if only used in server
 	args: false, //true if the command cant run without arguments
-	usage: '[argument1] [argument2]',
+	usage: '[]',
 
 	execute: async (message, args, client) => {
         const model = cpus()[0].model + " " + arch()
