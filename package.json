@@ -1,0 +1,20 @@
+{
+  "name": "bpclubhouse",
+  "version": "1.0.0",
+  "description": "Bijipecah Clubhouse",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "name":"git",
+    "url": "https://git.heroku.com/bijipecahvoice.git"
+  },
+  "author": "gcks",
+  "license": "ISC"
+}
